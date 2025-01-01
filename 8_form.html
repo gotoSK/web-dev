@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms & Input tags</title>
+</head>
+
+<body>
+    <h3>HTML forms</h3>
+    <form action="backend.php">
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" name="myName" id="name">
+        </div><br>
+
+        <div>
+            <label for="id">ID: </label>
+            <input type="text" name="myID" id="id">
+        </div><br>
+
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" name="myEmail" id="email">
+        </div><br>
+
+        <div>
+            <label for="date">Date: </label>
+            <input type="date" name="myDate" id="date">
+        </div><br>
+
+        <div>
+            <label for="hrs">Hours: </label>
+            <input type="number" name="myHour" id="hrs">
+        </div><br>
+
+        <div>
+            Gender: 
+            <label for="M">Male </label> <input type="radio" name="myGender" id="M">
+            <label for="F">Female </label> <input type="radio" name="myGender" id="F">
+            <label for="O">Others </label> <input type="radio" name="myGender" id="O">
+        </div><br>
+
+        <div>
+            <label for="agree">Agree terms & condition of the company </label>
+            <input type="checkbox" name="myAgreement" id="agree" checked>
+        </div><br>
+
+        <div>
+            <label for="area">Branch location </label>
+            <select name="myLocation" id="area">
+                <option value="ktm" selected>Kathmandu</option>
+                <option value="btp">Bhaktapur</option>
+                <option value="btp">Lalitpur</option>
+            </select>
+        </div><br>
+
+        <div>
+            <label for="letter">Cover Letter </label>
+            <br><textarea name="myLetter" cols="100" rows="14" id="letter"></textarea>
+        </div><br>
+
+        <div>
+            <input type="submit" value="Submit"> <input type="reset" value="Reset All">
+        </div><br>
+    </form>
+</body>
+
+</html>

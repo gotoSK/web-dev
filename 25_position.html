@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position absolute, relative, fixed, sticky</title>
+    <style>
+        .container{
+            border: 1px solid gray;
+            background-color: bisque;
+            margin: auto; width: 1000px;
+            height: 10000px;
+        }
+        .box{
+            border: 2px solid red;
+            margin: 10px;
+            display: inline-block;
+            height: 100px;
+            width: 200px;
+        }
+        #box3{
+            /* relative: relative to it's initial position */
+            /* position: relative;
+            top: 60px; left: 80px; */
+
+            /* absolute: relative to it's parent's position */
+            /* position: absolute;
+            top: 60px; left: 80px; */
+
+            /* fixed: postion is fixed on the window i.e. relative to the browser's window */
+            /* position: fixed;
+            bottom: 50px;
+            right: 20px; */
+
+            /* sticky: relative to user scroll position */
+            position: sticky;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Lorem ipsum dolor sit amet.</div>
+        <div class="box" id="box2">Lorem ipsum dolor sit amet.</div>
+        <div class="box" id="box3">Lorem ipsum dolor sit amet.</div>
+        <div class="box" id="box4">Lorem ipsum dolor sit amet.</div>
+    </div>
+</body>
+</html>

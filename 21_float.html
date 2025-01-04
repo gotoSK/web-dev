@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float, clear & align</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+   
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .container{
+            border: 5px solid rgb(100, 100, 171);
+            margin: 40px auto; /* margin: y(40px) x(auto) */
+            width: 700px;
+            background-color: rgb(113, 180, 118);
+        }
+        .item{
+            padding: 10px 10px;
+            border: 2px solid red;
+            margin: 10px;
+            background-color: rgb(164, 69, 121);
+        }
+        #fruits{
+            float: right;
+            width: 40%;
+        }
+        #electronics{
+            float: left;
+            width: 45%;
+        }
+        #clothing{
+            clear: both;
+            width: 93.73%;
+        }
+        p, h3{
+            /* text-align: left;
+            text-align: right;
+            text-align: center; */
+            text-align: justify;
+        }
+        h1{
+            margin: 10px auto; /* margin: y(40px) x(auto) */
+            width: 367px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WELCOME TO THE STORE!</h1>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruit-P" class="para">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt perferendis non voluptatum dolore earum nam alias enim, eveniet blanditiis eligendi vero reprehenderit veritatis cum, quae perspiciatis laudantium fugiat asperiores delectus debitis. Facilis quae dicta ipsa impedit beatae nostrum ullam.
+            </p>
+        </div>
+        <div id="electronics" class="item">
+            <h3>Electronics</h3>
+            <p id="electronics-P" class="para">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt perferendis non voluptatum dolore earum nam alias enim, eveniet blanditiis eligendi vero reprehenderit veritatis cum, quae perspiciatis laudantium fugiat asperiores delectus debitis. Facilis quae dicta ipsa impedit beatae nostrum ullam.
+            </p>
+        </div>
+        <div id="clothing" class="item">
+            <h3>Clothing</h3>
+            <p id="clothing-P" class="para">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt perferendis non voluptatum dolore earum nam alias enim, eveniet blanditiis eligendi vero reprehenderit veritatis cum, quae perspiciatis laudantium fugiat asperiores delectus debitis. Facilis quae dicta ipsa impedit beatae nostrum ullam.
+            </p>
+        </div>
+        <div id="accessories" class="item">
+            <h3>Accessories</h3>
+            <p id="accessories-P" class="para">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio incidunt perferendis non voluptatum dolore earum nam alias enim, eveniet blanditiis eligendi vero reprehenderit veritatis cum, quae perspiciatis laudantium fugiat asperiores delectus debitis. Facilis quae dicta ipsa impedit beatae nostrum ullam.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

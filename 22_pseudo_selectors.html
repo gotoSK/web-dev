@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors</title>
+    <style>
+        .container{
+            margin: 250px auto;
+            width: 800px;
+            /* border: 3px solid red; */
+        }
+        p, h3{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        hr{
+            width: 400px;
+        }
+
+        /* ------------------PSEUDO SELECTORS----------------- */
+        a{
+            text-decoration: none;
+            color: rgb(221, 2, 2);
+            background-color: rgb(228, 181, 181);
+            padding: 5px;
+            cursor: pointer; /* changes cursor to a pointing finger while hovering */
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 18px;
+            /* font-weight: bold; */
+            border-radius: 10px;
+        }
+
+        a:hover{
+            color:darkgoldenrod;
+            background-color:rgb(223, 245, 201);
+            border: 2px solid black;
+        }
+
+        /* a:visited{
+            color: rgb(8, 137, 8);
+        } */
+
+        /* the moment when your cursor just clicks the element */
+        a:active{
+            color: black;
+            background-color: rgb(29, 216, 91);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p><a href="https://duckduckgo.com/">Search</a></p>
+        <h3>Duck Duck Go</h3>
+        <hr>
+    </div>
+</body>
+</html>

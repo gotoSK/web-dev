@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model, padding and margin</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            /* this dosen't allow the width of box to change while padding and margin are changed*/
+
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            background-color: rgb(176, 40, 40);
+
+            padding: 40px 45px; /* padding: y(top,bottom) x(left, right) */
+
+            /* padding-top: 60px
+            padding-left: 70px ... bottom, right
+            or
+            padding/margin: top right bottom left*/
+
+            border: 5px solid rgb(37, 61, 140);
+            margin: 30px 20px;
+            width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <p class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic soluta qui illo suscipit obcaecati sit cupiditate beatae voluptatibus, tenetur quod eos placeat asperiores facere accusamus eveniet. Ut, optio eos nam quibusdam ullam, eligendi at animi ducimus, odit illo tempore blanditiis incidunt quo. Delectus fugit.
+    </p>
+    <p class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic soluta qui illo suscipit obcaecati sit cupiditate beatae voluptatibus, tenetur quod eos placeat asperiores facere accusamus eveniet. Ut, optio eos nam quibusdam ullam, eligendi at animi ducimus, odit illo tempore blanditiis incidunt quo. Delectus fugit.
+    </p>
+    <p class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic soluta qui illo suscipit obcaecati sit cupiditate beatae voluptatibus, tenetur quod eos placeat asperiores facere accusamus eveniet. Ut, optio eos nam quibusdam ullam, eligendi at animi ducimus, odit illo tempore blanditiis incidunt quo. Delectus fugit.
+    </p>
+</body>
+</html>

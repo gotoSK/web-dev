@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Media Queries</title>
+    <style>
+        .box{
+            text-align: center;
+            font-weight: bold;
+            font-size: 40px;
+            background-color: brown;
+            display: none;
+        }
+        @media (max-width:1000px){
+            #box1{
+                display: block;
+                color: aqua;
+            }
+        }
+        @media (min-width:1000px) and (max-width: 2000px){
+            #box2{
+                display: block;
+                color: greenyellow;
+            }
+        }
+        @media (min-width:2000px){
+            #box3{
+                display: block;
+                color: blueviolet;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">iPhone iPhone iPhone iPhone</div>
+    <div class="box" id="box2">Tablet Tablet Tablet Tablet</div>
+    <div class="box" id="box3">Computer Computer Computer Computer</div>
+</body>
+</html>

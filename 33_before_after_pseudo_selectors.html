@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before & After pseudo selectors</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(17, 17, 17);
+            color: rgb(236, 236, 236);
+        }
+        header::before{
+            background: url('./random/DF-team.png') no-repeat center center/cover;
+            /* https://www.w3schools.com/cssref/css3_pr_background.asp */
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        .navigation{
+            display: flex;
+        }
+        .navigation li{
+            list-style: none;
+            margin: 20px;
+        }
+        section{
+            /* border: 1px solid rgba(255, 0, 0, 0.598); */
+            height: 300px;
+            margin: 20px;
+            margin-left: 100px;
+            margin-right: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* center horizontally */
+            justify-content: center; /* center vertically */
+        }
+        /* or use section::after */
+        /* section::before{
+            color: rgba(0, 255, 255, 0.557);
+            content: "this is a before content";
+        } */
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+        }
+        hr{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to the page!</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dignissimos eveniet, amet modi quis odio, ipsa illum inventore incidunt rem delectus voluptas harum enim unde dicta aspernatur optio pariatur facere quidem, qui officia eligendi placeat! Illo consequatur tenetur laboriosam accusantium?
+        </p>
+    </section>
+    <hr>
+</body>
+</html>

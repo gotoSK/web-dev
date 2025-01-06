@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes & animations</title>
+    <style>
+        .container{
+            background-color: goldenrod;
+        }
+        .box{
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+            position: relative;
+
+            /* animation-name: ani; */
+            animation-name: square;
+            animation-duration: 5s;
+            /* animation-iteration-count: infinite; */
+            animation-fill-mode: forwards; /* backwards, alternate*/
+            
+            animation-timing-function: ease-in; /* slow in */
+            animation-timing-function: ease-out; /* slow out */
+            animation-timing-function: ease-in-out; /* slow in - normal - slow out */
+            
+            animation-delay: 2s;
+            animation-iteration-count: 2;
+            animation-direction: reverse;
+            animation-direction: alternate;
+
+            animation: triangle 5s ease-in-out 2s 2 alternate forwards;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+        @keyframes ani{
+            from{
+                width: 10px;
+            }
+            to{
+                width: 1000px;
+            }
+        }
+        @keyframes square{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 0pc;
+                left: 400px;
+            }
+            50%{
+                top: 400px;
+                left: 400px;
+            }
+            75%{
+                top: 400px;
+                left: 0px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+        }
+        @keyframes triangle{
+            0%{
+                top:0px;
+                left: 200px;
+            }
+            33.33%{
+                top:400px;
+                left: 400px;
+            }
+            66.67%{
+                top: 400px;
+                left: 0px;
+            }
+            100%{
+                top: 0px;
+                left: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

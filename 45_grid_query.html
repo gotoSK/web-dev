@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + Media Query</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'nav nav nav'
+            'aside section section';
+        }
+
+        @media only screen and (max-width: 358px){
+            body{
+                background-color: red;
+            }
+            nav span{
+                display: block;
+            }
+            .container{
+                grid-template-areas: 
+                'nav'
+                /* 'aside' */
+                'section';
+            }
+            aside{display: none;}
+        }
+        @media only screen and (min-width: 359px) and (max-width: 500px){
+            body{
+                background-color: blue;
+            }
+            .container{
+                grid-template-areas: 
+                'nav'
+                'aside'
+                'section';
+            }
+        }
+        @media (min-width: 500px) and (max-width: 800px){
+            body{
+                background-color: yellow;
+            }
+        }
+        @media (min-width: 800px){
+            body{
+                background-color: green;
+            }
+        }
+
+        
+        .bdr{
+            border: 2px solid;
+            padding: 10px;
+        }
+        nav{
+            grid-area: nav;
+            text-align: center;
+        }
+        nav span{
+            padding: 10px;
+        }
+        aside{
+            grid-area: aside;
+            background: url('./random/DF-team.png');
+        }
+        section{
+            grid-area: section;
+            background: url('./random/DF-team.png');
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>HOME</span>
+            <span>ABOUT</span>
+            <span>CONTACT</span>
+            <span>MORE</span>
+        </nav>
+        
+        <aside class="bdr">
+            <h2 style="text-align: center;">Lorem, ipsum.</h2>
+        </aside>
+        
+        <section class="bdr">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nulla aperiam possimus. Vitae reprehenderit cum nulla provident, dolor ad eveniet praesentium consectetur atque, odit est delectus omnis, cumque quasi quam quidem vero. Sed, assumenda. Dolor tenetur odio natus. Inventore, exercitationem odit doloremque magnam corporis nam nisi pariatur reprehenderit, repellat, doloribus beatae nemo deserunt iure unde repudiandae omnis laboriosam placeat saepe animi. Deserunt delectus dignissimos nisi iure repellat magnam recusandae et rerum impedit debitis porro ipsum, quis, natus totam, earum asperiores enim sapiente quisquam quam. Maxime, at deserunt rerum iure voluptate nihil porro error aperiam optio aut beatae vero maiores qui?</h1>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Template Area</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar'
+            'aside section section';
+
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .item{
+            background-color: rgb(222, 235, 126);
+        }
+        #navbar{
+            grid-area: navbar;
+            
+            text-align: center;
+            font-weight: 600;
+            padding: 10px;
+        }
+        #aside{
+            grid-area: aside;
+            
+            padding-left: 150px;
+            padding-top: 10px;
+        }
+        #section{
+            grid-area: section;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            HOME ABOUT CONTACT US
+        </div>
+        <div id="aside" class="item">
+            Lorem, ipsum. <br>
+            Lorem, ipsum. <br>
+            Lorem, ipsum. <br>
+            Lorem, ipsum. <br>
+            Lorem, ipsum. <br>
+            Lorem, ipsum. <br>
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, ratione vitae molestiae nesciunt, quos doloribus vel quibusdam perspiciatis ipsum sit libero quaerat debitis nam earum consectetur. Ratione obcaecati nostrum, nihil accusantium officiis illo accusamus doloremque dignissimos modi impedit repellat, vel voluptatem! Quibusdam inventore dicta assumenda dolorem distinctio nam, deserunt repellat dolore dolor excepturi facilis sed rem dolores ullam quas quo modi? Labore maxime tempore harum nostrum molestiae et ex itaque similique.
+        </div>
+    </div>
+</body>
+</html>

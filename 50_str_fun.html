@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript String Funtions</title>
+</head>
+<body>
+    <script>
+        var str="This is a string";
+        console.log(str);
+        // First occurance of a substring
+        var pos=str.indexOf('is');
+        console.log(pos);
+        // Last occurance of a substring
+        pos=str.lastIndexOf('is');
+        console.log(pos);
+        // Substring from a string
+        var substr=str.slice(1,6);
+        substr=str.substr(1,6); // extract 6 characters starting from index 1
+        console.log(substr);
+        // Replace
+        var replaced=str.replace('string', 'Football');
+        console.log(replaced);
+        // Upper & Lower case conversion
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+        // concat
+        var newstr=replaced.concat(' and Messi');
+        console.log(newstr);
+        // trim front and end whitespaces
+        var strwiththitespaces="     this is     blank like     ronaldo's barin           ";
+        console.log(strwiththitespaces);
+        console.log(strwiththitespaces.trim());
+        // extract char from string
+        var char=str.charAt(2);
+        console.log(char);
+    </script>
+</body>
+</html>

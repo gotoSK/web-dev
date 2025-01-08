@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | Strings & Strings Methods</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Heading</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nam! Obcaecati eligendi laborum natus est incidunt dignissimos mollitia molestiae dolore? Possimus nulla perferendis eveniet eius facilis reiciendis quisquam ab sit porro neque dolore iure voluptas nesciunt assumenda veritatis rem, asperiores voluptatibus quibusdam. Voluptates odio amet sapiente dignissimos corporis enim quam cum, nemo sunt temporibus fugiat aliquid? Fugiat consectetur nam, deleniti fuga atque, modi tempora dicta dolor inventore laboriosam reprehenderit repudiandae ad? Assumenda, totam. Temporibus corrupti numquam illo vel blanditiis dolores, dolorem consequatur quo architecto minus. Illo, repudiandae consequuntur molestias temporibus fuga ad esse? Nam quod qui quas voluptas omnis officia.</p>
+    </div>
+    <script>
+        var string1 = "the name of your college";
+        var string2 = 'Jose';
+        var string3 = 'Yo!';
+        var string4 = "What's";
+        var loc = 'Cuba';
+        // console.log(string3 +string2 + string4 + string1);
+        
+        var temp = `${string2} es de ${loc}`;
+        // console.log(temp);
+        
+        var len=string2.length;
+        // console.log(`El length de nombre es ${len}`);
+
+        // console.log("Hello World!\n!Hola Mundo\t\ty todos!\b");
+        
+        var y=new String("this"); // string constructor
+        console.log(y);
+
+        document.getElementById('content').innerHTML='<h3>This is from javascript</h3>'
+    </script>
+</body>
+</html>

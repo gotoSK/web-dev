@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays & Objects</title>
+</head>
+<body>
+    <div class="container">Un HTML sencillo</div>
+    <script>
+        let myVar1=10;
+        let myVar2="string";
+        let myVar3=true;
+        let myVar4=null;
+        let myVar5=undefined;
+        let player={
+            name:"Lionel Andres Messi",
+            salary:10000000,
+            club1:"F.C. Barcelona",
+            "club 2":"PSG",
+            club3:"Miami F.C.",
+            nationality:"Argentine"
+        }
+        console.log(player['club 2']);
+        console.log(player.club3);
+        let names=[1, 2.5, "String", 0, undefined];
+        // or
+        // let names= new Array(1, 2.5, "String", undefined);
+        console.log(names);
+        names=names.sort();
+        console.log(names);
+        names.push('this is pushed'); // push at end of the array
+        console.log(names);
+        let arr=new Array(10); // size 10 array
+        console.log(arr);
+        console.log(arr[0]);
+    </script>
+</body>
+</html>

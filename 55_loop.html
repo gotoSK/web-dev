@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <div class="container">This is about loops.</div>
+    <script>
+        let personas=['Jose', 'Maria', 'Alberto', 'Andres'];
+        // for (let index = 0; index < personas.length; index++) {
+        //     console.log("Hello, " + personas[index]);
+        // }
+        // personas.forEach(function f(element){
+        //     console.log("Hello, " + element);
+        // });
+        // for (const iterator of personas) {
+        //     console.log("Hola, " + iterator);
+        // }
+        let employee={
+            nombre:'Eddy', salary:15000, id:897
+        }
+        for (const key in employee) {
+            console.log(`El ${key} de employee es ${employee[key]}`);
+        }
+        let i=0;
+        while(i<4){
+            console.log(`${i}<4`);
+            i++;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <script>
+        // Arrow finction
+        let greet = ()=>{
+            console.log("Arrow function!");
+        }
+        // greet = () => console.log("Arrow function!");
+        greet();
+        
+        let sum = (a,b) => a+b;
+        console.log(sum(11,20));
+        let half = a => a/2;
+        console.log(half(4.5));
+
+        // setTimeout(() => {
+        //     console.log("2 secs delay");
+        // }, 2000);
+
+        let obj1={
+            greeting: "Beunos dias!",
+            names:["Harry", "Malu", "Carlos", "Antonio"],
+            speak(){
+                this.names.forEach((student)=>{ // if used classic function insted of arrow, 'this' would refer to the var within itself not that of the object
+                    console.log(this.greeting, "Me llamo " + student);
+                });
+            }
+        }
+        obj1.speak();
+    </script>
+</body>
+</html>

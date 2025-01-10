@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Dates</title>
+</head>
+<body>
+    The current time is <span id="time"></span>
+    <script>
+        // let now = new Date();
+        // console.log(now);
+        // now = new Date(0);
+        // console.log(now);
+
+        // now = new Date(yr, mnth, date, hr, min, s, ms);
+        now = new Date(2025, 1, 1, 12, 0, 0, 0);
+        console.log(now);
+        
+        let yr=now.getFullYear(); // getDate(), getMonth(), getDay(), getHours()... 
+        console.log("The year is ", yr);
+        
+        console.log(Date.now());
+        
+        now.setDate(2);
+        now.setMinutes(22);
+        console.log(now);
+
+        // Clock
+        function updateTime(){
+            time.innerHTML=new Date()
+        }
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+</html>
